@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Login = () => {
+const SignUpForm = () => {
     return (
         <div>
-            <h1>It is Login Page</h1>
+            <h1>Form</h1>
         </div>
     );
 };
 
-export default Login;
+export default SignUpForm;
