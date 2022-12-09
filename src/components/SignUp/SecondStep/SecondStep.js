@@ -9,10 +9,6 @@ const SecondStep = ({ formData, setFormData }) => {
           className="border-b-2 mt-24 pl-[15px] lg:w-[90px] focus:outline-none"
           placeholder="+880"
           readOnly
-          value={formData.countryDigit}
-          onChange={(event) =>
-            setFormData({ ...formData, countryDigit: event.target.value })
-          }
         />
         <input
           type="text"
@@ -26,7 +22,7 @@ const SecondStep = ({ formData, setFormData }) => {
       </div>
       <div className="lg:w-[368px] mx-auto">
         <input
-          type="text"
+          type="email"
           className="border-b-2 mt-[60px] pl-[15px] lg:w-[368px] focus:outline-none"
           placeholder="Write Email Address"
           value={formData.email}

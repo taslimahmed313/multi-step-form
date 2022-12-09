@@ -19,9 +19,9 @@ const FirstStep = ({ formData, setFormData }) => {
           type="text"
           className="border-b-2 mt-[60px] pl-[15px] lg:w-[368px] focus:outline-none"
           placeholder="Write Last Name"
-          value={formData.last_name}
+          value={formData.last_Name}
           onChange={(event) =>
-            setFormData({ ...formData, last_name: event.target.value })
+            setFormData({ ...formData, last_Name: event.target.value })
           }
         />
       </div>
