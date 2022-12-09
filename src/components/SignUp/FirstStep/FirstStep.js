@@ -6,22 +6,22 @@ const FirstStep = ({ formData, setFormData }) => {
       <div className="lg:w-[368px] mx-auto">
         <input
           type="text"
-          className="border-b-2 mt-24 pl-[15px] lg:w-[368px]"
+          className="border-b-2 mt-24 pl-[15px] lg:w-[368px] focus:outline-none"
           placeholder="Write First Name"
-          value={formData.email}
+          value={formData.first_name}
           onChange={(event) =>
-            setFormData({ ...formData, email: event.target.value })
+            setFormData({ ...formData, first_name: event.target.value })
           }
         />
       </div>
       <div className="lg:w-[368px] mx-auto">
         <input
           type="text"
-          className="border-b-2 mt-[60px] pl-[15px] lg:w-[368px]"
+          className="border-b-2 mt-[60px] pl-[15px] lg:w-[368px] focus:outline-none"
           placeholder="Write Last Name"
-          value={formData.email}
+          value={formData.last_name}
           onChange={(event) =>
-            setFormData({ ...formData, email: event.target.value })
+            setFormData({ ...formData, last_name: event.target.value })
           }
         />
       </div>

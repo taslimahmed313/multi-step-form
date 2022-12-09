@@ -3,30 +3,38 @@ import React from 'react';
 const SecondStep = ({ formData, setFormData }) => {
   return (
     <div>
-      <input
-        type="text"
-        placeholder="First Name..."
-        value={formData.firstName}
-        onChange={(e) => {
-          setFormData({ ...formData, firstName: e.target.value });
-        }}
-      />
-      <input
-        type="text"
-        placeholder="Last Name..."
-        value={formData.lastName}
-        onChange={(e) => {
-          setFormData({ ...formData, lastName: e.target.value });
-        }}
-      />
-      <input
-        type="text"
-        placeholder="Username..."
-        value={formData.username}
-        onChange={(e) => {
-          setFormData({ ...formData, username: e.target.value });
-        }}
-      />
+      <div className="lg:w-[368px] mx-auto">
+        <input
+          type="text"
+          className="border-b-2 mt-24 pl-[15px] lg:w-[90px] focus:outline-none"
+          placeholder="+880"
+          readOnly
+          value={formData.countryDigit}
+          onChange={(event) =>
+            setFormData({ ...formData, countryDigit: event.target.value })
+          }
+        />
+        <input
+          type="text"
+          className="border-b-2 mt-24 pl-[15px] lg:w-[271px] ml-[7px] focus:outline-none"
+          placeholder="1xxxxxxxxx"
+          value={formData.phone_number}
+          onChange={(event) =>
+            setFormData({ ...formData, phone_number: event.target.value })
+          }
+        />
+      </div>
+      <div className="lg:w-[368px] mx-auto">
+        <input
+          type="text"
+          className="border-b-2 mt-[60px] pl-[15px] lg:w-[368px] focus:outline-none"
+          placeholder="Write Email Address"
+          value={formData.email}
+          onChange={(event) =>
+            setFormData({ ...formData, email: event.target.value })
+          }
+        />
+      </div>
     </div>
   );
 };

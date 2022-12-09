@@ -2,23 +2,16 @@ import React from 'react';
 
 const FinalStep = ({ formData, setFormData }) => {
   return (
-    <div>
+    <div className="lg:w-[368px] mx-auto">
       <input
-        type="text"
-        placeholder="Password..."
+        type="password"
+        className="border-b-2 mt-24 pl-[15px] lg:w-[368px] focus:outline-none"
+        placeholder="Write Password"
         value={formData.password}
         onChange={(event) =>
           setFormData({ ...formData, password: event.target.value })
         }
       />
-      {/* <input
-        type="text"
-        placeholder="Confirm Password..."
-        value={formData.confirmPassword}
-        onChange={(event) =>
-          setFormData({ ...formData, confirmPassword: event.target.value })
-        }
-      /> */}
     </div>
   );
 };
